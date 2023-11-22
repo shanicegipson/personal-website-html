@@ -1,0 +1,18 @@
+.navigation {
+    width: 100%;
+    border: 1px solid;
+
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+    
+        .nav-item {
+            list-style-type: none;
+
+            .nav-item-link {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
