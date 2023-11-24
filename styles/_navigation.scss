@@ -1,6 +1,5 @@
 .navigation {
     width: 100%;
-    border: 1px solid;
 
     .nav-list {
         display: flex;
@@ -8,11 +7,12 @@
     
         .nav-item {
             list-style-type: none;
-            padding: 30px 0 0;
+            padding: 15px 0;
 
             .nav-item-link {
                 color: black;
                 text-decoration: none;
+                font-size: 18px;
             }
         }
     }
