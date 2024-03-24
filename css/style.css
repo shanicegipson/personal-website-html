@@ -77,85 +77,97 @@ table {
   -webkit-animation: circle 1.5s ease-in forwards;
 }
 
+main {
+  background-color: #264653;
+}
+
 .main-hero-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  overflow: hidden;
+  padding-top: 42px;
 }
-.main-hero-container .main-hero-svg-container-1 {
-  position: absolute;
-  top: 16%;
-  left: 0;
-  width: 400px;
-}
-.main-hero-container .main-hero-text {
+.main-hero-container .main-hero__text-container {
   display: flex;
   flex-direction: column;
-  z-index: 10;
-  padding: 110px 0 0 86px;
+  color: white;
+  padding-left: 40px;
 }
-.main-hero-container .main-hero-text .main-hero-title {
-  font-size: 72px;
-  margin: 0 auto;
+.main-hero-container .main-hero__text-container .main-hero__pretitle {
+  font-size: 58px;
+  padding-bottom: 20px;
+}
+.main-hero-container .main-hero__text-container .main-hero__title {
+  font-size: 84px;
   font-weight: 600;
-  color: crimson;
+  color: #e76f51;
+  line-height: 80px;
 }
-.main-hero-container .main-hero-text .main-hero-subtitle {
-  margin: 0 auto;
-  font-size: 40px;
+.main-hero-container .main-hero__text-container .main-hero__title span {
+  color: white;
+  padding-right: 20px;
 }
-.main-hero-container .main-hero-text .main-hero-description {
-  margin: 0 auto;
+.main-hero-container .main-hero__text-container .main-hero__subtitle {
+  font-size: 54px;
+}
+.main-hero-container .main-hero__text-container .main-hero-description {
   font-size: 18px;
-  padding: 20px 200px;
   text-align: center;
 }
-.main-hero-container .main-hero-text .main-hero-button-container {
+.main-hero-container .main-hero__image {
+  padding-left: 45px;
+}
+
+.about-me__container {
+  background-color: #f4a261;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+.about-me__container .about-me__title {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+.about-me__container .about-me__text-container {
+  font-size: 20px;
+  padding: 190px;
+}
+.about-me__container .about-me__text-container .about-me__description-container p {
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.portfolio__container {
+  background-color: #e9c46a;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  height: 100%;
+  padding: 60px;
+  align-items: center;
+}
+.portfolio__container .portfolio__header {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+.portfolio__container .portfolio__container-card {
   display: flex;
   justify-content: center;
-  padding-top: 45px;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 0 60px;
 }
-.main-hero-container .main-hero-text .main-hero-button-container .resume-button {
-  margin-right: 13px;
-  background-color: crimson;
-  border: none;
-  color: white;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 16px;
+.portfolio__container .portfolio__card {
+  width: 400px;
+  background-color: white;
+  border-radius: 4px;
+  height: 400px;
+  box-shadow: 2px 2px 26px #2a9d8f;
 }
-.main-hero-container .main-hero-text .main-hero-button-container .contact-button {
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  border: none;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 16px;
-}
-.main-hero-container .image-container {
-  display: flex;
-  justify-content: center;
-  height: 600px;
-}
-.main-hero-container .image-container .shanice-image-2 {
-  position: relative;
-  z-index: 10;
-  top: 17%;
-  width: 300px;
-  height: 325px;
-}
-.main-hero-container .image-container .main-hero-svg-container-2 {
-  position: absolute;
-  left: 70%;
-  width: 30%;
-}
-.main-hero-container img.hero-image {
-  width: 225px;
+.portfolio__container .portfolio__card .portfolio__image-container .portfolio__image {
+  width: 100%;
   height: 300px;
-  position: absolute;
-  top: 20%;
-  left: 81%;
-  z-index: 10;
 }
